@@ -1,0 +1,40 @@
+@import '~bootstrap/dist/css/bootstrap.min.css';
+
+
+ol {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: rgb(93, 4, 4);
+  }
+    footer{
+      float:left;
+      display: block;
+      color: white;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+  }
+  
+  li {
+    float: right;
+  }
+  
+  li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  li a:hover {
+    background-color: rgb(199, 81, 81);
+  }
+  
+
+
+
+
+

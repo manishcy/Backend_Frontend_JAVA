@@ -1,0 +1,36 @@
+<ol>
+    <li><a class="nav-link" href="#" routerLink="/home" >Logout</a></li>
+     <li><a class="nav-link" href="#" routerLink="/restaurent" >Add Restaurent</a></li>
+        <footer>Online Food </footer>
+  </ol>
+
+ 
+  
+
+<div class="container">
+<div class="panel panel-primary">
+    <div class="panel-heading">
+      <h2>Employee List</h2>
+    </div>
+    <div class="panel-body">
+      <table class="table table-striped">
+        <thead>
+          <tr>
+            <th>Name</th>
+            <th>Email</th>
+            <th>Mobile Number</th>
+            <th>Actions</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let user of users | async">
+            <td>{{user.userName}}</td>
+            <td>{{user.userEmail}}</td>
+            <td>{{user.userMobileNo}}</td>
+           <td><button (click)="deleteUser(user.userId)" class="btn btn-danger">Delete</button> 
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,45 @@
+<ol>
+    <li><a class="nav-link" href="#" routerLink="/home" >Logout</a></li>
+        <footer>Bhojan</footer>
+  </ol>
+
+
+
+  
+
+
+
+
+  <br>
+ 
+<div class="container">
+<div class="row">
+ 
+  <div class="card" style="width: 15rem" *ngFor="let restaurent of rest | async">
+    &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp; 
+    <img class="card-img-top" >
+      <img class="card-img-top" src="../assets/images/5.jpg" alt="Card image cap"> 
+       <div class="card-body">
+           <h4 class="card-title">{{restaurent.restaurantName}}</h4> 
+        <a routerLink="/user-food-list/{{ restaurent.restId }}" class="btn btn-primary">MENU</a>
+        &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp; 
+        <br><br>
+      </div>
+    </div> 
+  </div>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+   
